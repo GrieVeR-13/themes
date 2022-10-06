@@ -507,7 +507,7 @@ body {
 }
 
 .typeWindows-2-g3UY {
-    padding: 0px 0;
+    padding: 1px 0;
     margin: 0;
     box-sizing: border-box;
     background-color: var(--backgroundColor)
@@ -538,7 +538,7 @@ body {
 }
 
 .winButton-3UMjdg:hover {
-    background-color: transparent
+    background-color: #56515C;
 }
 
 .winButtonMinMax-3RsPUg:nth-child(3) svg {
