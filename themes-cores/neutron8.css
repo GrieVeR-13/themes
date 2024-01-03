@@ -1,7 +1,29 @@
+/**
+ * @name Neutron
+ * @version 8.1
+ * @description A simple but highly customizable theme, now sugar free!
+ * @author Spectra
+ * @invite PZdnCVD
+ * @source https://github.com/xcruxiex/themes
+ * @website https://betterdiscord.app/theme/Neutron
+ *//*
+$$\   $$\ $$$$$$$$\ $$\   $$\ $$$$$$$$\ $$$$$$$\   $$$$$$\  $$\   $$\
+$$$\  $$ |$$  _____|$$ |  $$ |\__$$  __|$$  __$$\ $$  __$$\ $$$\  $$ |
+$$$$\ $$ |$$ |      $$ |  $$ |   $$ |   $$ |  $$ |$$ /  $$ |$$$$\ $$ |
+$$ $$\$$ |$$$$$\    $$ |  $$ |   $$ |   $$$$$$$  |$$ |  $$ |$$ $$\$$ |
+$$ \$$$$ |$$  __|   $$ |  $$ |   $$ |   $$  __$$< $$ |  $$ |$$ \$$$$ |
+$$ |\$$$ |$$ |      $$ |  $$ |   $$ |   $$ |  $$ |$$ |  $$ |$$ |\$$$ |
+$$ | \$$ |$$$$$$$$\ \$$$$$$  |   $$ |   $$ |  $$ | $$$$$$  |$$ | \$$ |
+\__|  \__|\________| \______/    \__|   \__|  \__| \______/ \__|  \__|
+*/
+/*
 @import url("https://xcruxiex.github.io/themes/core/custom-font.css");
+*/
 @import url("https://xcruxiex.github.io/themes/core/settings-icons.css");
-@import url("https://nyri4.github.io/Discolored/main.css");
+@import url("https://nyri4.github.io/Discolored/main.css"); 
 @import url("https://xcruxiex.github.io/themes/core/hljs.css");
+@import url("https://xcruxiex.github.io/themes/core/badges.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /* Custom font import link (see fonts.google.com) */
 
 :root {
     --themeColor1: #36D1DC;
@@ -507,11 +529,11 @@ body {
 
 .typeWindows_a934d8,
 .winButton_a934d8 {
-    height: 25px
+    height: 20px
 }
 
 .typeWindows_a934d8 {
-    padding: 5px 0;
+    padding: 1px 0;
     margin: 0;
     box-sizing: border-box;
     background-color: var(--backgroundColor)
@@ -520,10 +542,10 @@ body {
 .typeWindows_a934d8::after {
     content: "";
     position: absolute;
-    top: -14px;
+    top: 0px;
     left: 0;
     width: 100%;
-    height: 25px;
+    height: 0px;
     background: radial-gradient(var(--themeColor1), var(--themeColor2), transparent 70%);
     opacity: .1
 }
@@ -542,7 +564,7 @@ body {
 }
 
 .winButton_a934d8:hover {
-    background-color: transparent
+    background-color: #56515C;
 }
 
 .winButtonMinMax_a934d8:nth-child(3) svg {
@@ -3281,4 +3303,35 @@ div[aria-label=GUILD_SETTINGS] .topPill-3DJJNV .themed-2-lozF.selected-g-kMVV.it
 
 .row_e677b7{
 	background-color: #00000080;
+}
+
+/*##########################################################################
+
+                 CHANGE VALUES BELOW TO CUSTOMIZE YOU THEME
+
+##########################################################################*/
+:root {
+  /* COLORS */
+  --themeColor1: #36D1DC; /* Theme's color 1 */
+  --themeColor2: #5B86E5; /* Theme's color 2 */
+
+  /* CUSTOM FONT */
+  --customFont: 'Open sans', sans-serif; /* Custom font, change the name in 'font name here', you must import the font first */
+
+  /* HOME BUTTON */
+  --homeImage: url('https://i.postimg.cc/g0nchXPL/Grie-Ve-R-13.png');/* Home button image, must be a direct link | You can also set it to a gradient, google "css gradient"*/
+  --homeImageSize: cover;/* To cover the button, set to "cover". You can also set it to "100% 100%" but the image will be stretched. Set to "contain" to see the entire image */
+
+  /* BACKGROUND */
+  --backgroundColor: #0d0d0d; /* Background color */
+  --backgroundImage: url('https://imgur.com/qhBghXt.png'); /* Backround image, must be a direct link | You can also set it to a gradient, google "css gradient"*/
+  --backgroundPosition: center; /* Image position | center, left, right, bottom, top */
+  --backgroundSize: cover; /* To cover the entire app, set to "cover". You can also set it to "100% 100%" but the image will be stretched. Set to "contain" to see the entire image */
+  --backgroundRepeat: no-repeat; /* if you want the image to repeat | Google "css background repeat" */
+  --backgroundBlur: 100px; /* Set to 0 to remove blur | Set to 10px for average blur */
+  --backgroundOpacity: .65; /* 0 is transparent */
+
+  /* CODE BLOCKS */
+  --backgroundCode: rgba(0,0,0,.5);
+  --backgroundName: rgba(0,0,0,.5);
 }
